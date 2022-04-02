@@ -1,11 +1,16 @@
-import { Button } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import HomePage from './pages/HomePage'
 
 function App() {
   return (
-    <>
-      Hello World
-      <Button variant='danger'>testing scss</Button>
-    </>
+    <Router>
+      <Container>
+        <Routes>
+          <Route path='/' element={<HomePage />} />  
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 
