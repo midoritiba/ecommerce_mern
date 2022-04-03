@@ -10,7 +10,7 @@ import {
 } from '../actions/orderActions'
 
 
-const OrderListScreen = () => {
+const OrderListPage = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch()
@@ -86,4 +86,4 @@ const OrderListScreen = () => {
   )
 }
 
-export default OrderListScreen
+export default OrderListPage

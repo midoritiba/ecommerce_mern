@@ -14,7 +14,7 @@ import {
 } from '../constants/orderConstants'
 
 
-const OrderScreen = () => {
+const OrderPage = () => {
     const dispatch = useDispatch()
     const params = useParams()
     const orderId = params.id
@@ -228,4 +228,4 @@ const OrderScreen = () => {
   )
 }
 
-export default OrderScreen
+export default OrderPage

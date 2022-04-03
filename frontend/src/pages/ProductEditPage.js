@@ -10,7 +10,7 @@ import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 import { useParams} from 'react-router-dom'
 
-const ProductEditScreen = () => {
+const ProductEditPage = () => {
     const params = useParams()
     const productId = params.id
     const navigate = useNavigate();
@@ -196,4 +196,4 @@ const ProductEditScreen = () => {
   )
 }
 
-export default ProductEditScreen
+export default ProductEditPage

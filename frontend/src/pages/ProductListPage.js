@@ -13,7 +13,7 @@ import {
 } from '../actions/productActions'
 import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
 
-const ProductListScreen = () => {
+const ProductListPage = () => {
   const params = useParams()
   const navigate = useNavigate();
   const dispatch = useDispatch()
@@ -130,4 +130,4 @@ const ProductListScreen = () => {
   )
 }
 
-export default ProductListScreen
+export default ProductListPage
