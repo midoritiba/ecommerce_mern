@@ -1,5 +1,7 @@
 # ecommerce_mern
 
+in production...
+
 Ecommerce built with MERN Stack &amp; Redux
 
 - Pagination
