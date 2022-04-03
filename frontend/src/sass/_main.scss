@@ -24,6 +24,9 @@ body{
             min-height: 80vh;
         }
     }
+    .rating span {
+        margin-right: 0.1rem;
+      }
 }
 
 // *************************************************
@@ -196,3 +199,20 @@ footer{
         }
       }
   }
+
+  // *************************************************
+// 6) Card Product (Product Component)
+.card-product{
+    box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+    -webkit-box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+    -moz-box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+    min-height: 28rem;
+    border: none;
+    .card-img-top{
+        border-radius: 20px;
+      }
+    &:hover{
+        filter: brightness(110%);
+    }
+}
+
