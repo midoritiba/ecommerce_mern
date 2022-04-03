@@ -1,7 +1,18 @@
 import { Navbar, Nav, NavDropdown,Container, Image } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap';
+import { logout } from '../actions/userActions'
 
 const Header = () => {
+
+    const dispatch = useDispatch()
+
+    const userLogin = useSelector((state) => state.userLogin)
+    const { userInfo } = userLogin
+
+    const logoutHandler = () =>{
+        dispatch(logout());
+    }
 
 return (
     <header>
@@ -78,22 +89,26 @@ return (
                             
                             {/* NavItem */}
                             <LinkContainer to='/cart'>
-                                <Nav.Link className="text-center ps-lg-4"><i className='fas fa-shopping-cart ps-2' style={{color: 'white'}}></i>CART</Nav.Link>
+                                <Nav.Link className="text-center ps-lg-4"><i className='fas fa-shopping-cart pe-2'></i>CART</Nav.Link>
                             </LinkContainer>
-                              {/* <NavDropdown title='User Name' id='username'>
+
+                            {userInfo ? (
+                                <NavDropdown  title={userInfo.name} id='username'>
                                     <LinkContainer to='/profile'>
                                         <NavDropdown.Item className="text-center">Profile</NavDropdown.Item>
                                     </LinkContainer>
-                                    <NavDropdown.Item  className="text-center">
+                                    <NavDropdown.Item  className="text-center" onClick={logoutHandler}>
                                         Logout
                                     </NavDropdown.Item>
-                                </NavDropdown> */}
-                            {/* NavItem */}
-                            <LinkContainer to='login'>
-                                <Nav.Link className="text-center ps-lg-4 pe-lg-4"><i className='fas fa-user ps-2'></i>SIGN IN</Nav.Link>
-                            </LinkContainer>
+                                </NavDropdown>
+                                ) : (
+                                <LinkContainer to='/login'>
+                                    <Nav.Link className="ps-lg-4 pe-lg-5"><i className='fas fa-user pe-2'></i>SIGN IN</Nav.Link>
+                                </LinkContainer>
+                            )}
 
-                                {/* <NavDropdown title='Admin' id='adminmenu'>
+                            {userInfo && userInfo.isAdmin && (
+                                <NavDropdown title='Admin' id='adminmenu'>
                                     <LinkContainer to='/admin/userlist'>
                                         <NavDropdown.Item>Users</NavDropdown.Item>
                                     </LinkContainer>
@@ -103,7 +118,8 @@ return (
                                     <LinkContainer to='/admin/orderlist'>
                                         <NavDropdown.Item>Orders</NavDropdown.Item>
                                     </LinkContainer>
-                                </NavDropdown> */}
+                                </NavDropdown>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
