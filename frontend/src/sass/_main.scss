@@ -1,3 +1,13 @@
+//STYLES - MAP
+// 1) Body (index.html)
+// 2) Header (Component)
+// 3) Main Container (App.js)
+// 4) Hero Section (Component)
+// 5) Footer (Component)
+
+
+// *************************************************
+// 1) Body
 body{
     padding: 2rem 0;
     background: rgb(0, 0, 0);
@@ -16,7 +26,8 @@ body{
     }
 }
 
-//HEADER COMPONENT - NAVBAR
+// *************************************************
+// 2) HEADER COMPONENT - NAVBAR
 header{
     -webkit-box-shadow: -6px 7px 85px -1px rgba(0,0,0,0.54);
     -moz-box-shadow: -6px 7px 85px -1px rgba(0,0,0,0.54);
@@ -32,7 +43,7 @@ header{
     }
     .brand-name{
         padding: 1rem;
-        width: 180px;
+        width: 200px;
     }
 
     .thumbnail-image {
@@ -61,17 +72,19 @@ header{
 
     @media only screen and (max-width: 1400px) {
         .brand-name {
-          width: 120px;
+          width: 140px;
         }
       }
 }
 
-//MAIN CONTAINER
+// *************************************************
+// 3) MAIN CONTAINER
 .main-container{
     background-color: #f0f0f0;
 }
 
-//HEROSECTION COMPONENT
+// *************************************************
+// 4) HEROSECTION COMPONENT
 .carousel-caption{
     // background-color: #f5f5f551;
     border-radius: 30px;
@@ -105,8 +118,9 @@ header{
     }
   }
 
-  //FOOTER COMPONENT
-  footer{
+// *************************************************
+// 5) FOOTER COMPONENT
+footer{
     width: 100%;
     background: $light-green;
     color: white;
@@ -117,6 +131,17 @@ header{
     .copyright{
         background: #7d8873;
         border-radius: 0 0 5px 5px ;
+        a{
+            img{
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+                margin-bottom: 2.3px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
         h4{
             color: $light-grey;
@@ -136,4 +161,8 @@ header{
     a{
         text-decoration: none;
     }
+    
   }
+
+// *************************************************
+// 6)
