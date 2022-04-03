@@ -13,6 +13,10 @@ import CartPage from './pages/CartPage'
 import PaymentPage from './pages/PaymentPage'
 import OrderPage from './pages/OrderPage'
 import UserListPage from './pages/UserListPage'
+import UserEditPage from './pages/UserEditPage'
+import ProductListPage from './pages/ProductListPage'
+import ProductEditPage from './pages/ProductEditPage'
+import OrderListPage from './pages/OrderListPage'
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
                 <Route path='/placeorder' element={<PlaceOrderPage />} />
                 <Route path='/order/:id' element={<OrderPage />} />
                 <Route path='/admin/userlist' element={<UserListPage />} />
+                <Route path='/admin/user/:id/edit' element={<UserEditPage />} />
+                <Route path='/admin/productlist' element={<ProductListPage />} />
+                <Route path='/admin/product/:id/edit' element={<ProductEditPage />} />
+                <Route path='/admin/orderlist' element={<OrderListPage />} />
                 <Route path="/cart">
               <Route path=":id" element={<CartPage />} />
               <Route path="" element={<CartPage />} />
