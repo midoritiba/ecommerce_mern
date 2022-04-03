@@ -8,6 +8,7 @@ import Loader from '../components/Loader';
 import { listProducts } from '../actions/productActions'
 import HeroSection from '../components/HeroSection'
 import Categories from '../components/Categories'
+import Sale from '../components/Sale'
 // import { Row, Col } from 'react-bootstrap';
 
 const HomePage = () => {
@@ -44,6 +45,7 @@ const HomePage = () => {
           </Row>
         </>
       )}
+      <Sale/>
     </>
   )
 }

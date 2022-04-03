@@ -4,7 +4,7 @@
 // 3) Main Container (App.js)
 // 4) Hero Section (Component)
 // 5) Footer (Component)
-
+// 6) Card Product (Product Component)
 
 // *************************************************
 // 1) Body
@@ -200,7 +200,7 @@ footer{
       }
   }
 
-  // *************************************************
+// *************************************************
 // 6) Card Product (Product Component)
 .card-product{
     box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
@@ -216,3 +216,48 @@ footer{
     }
 }
 
+// *************************************************
+// 7) Card Sale (Sale Component)
+
+.card-sale{
+    min-height: 28rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card-title{
+        h2{
+            background-color: $pink; 
+            display: inline-block;
+            position: absolute;
+            bottom: 50%;
+            left: 0.1%;
+            font-size: 30px;
+            padding: 1%;
+            color: white;
+        }
+    }
+    .card-text{
+        position: absolute;
+        bottom: 15%;
+        width: 50%;
+    }
+    h1{
+        width: 50%;
+      }
+      .btn-shop{
+        position: absolute;
+        bottom: 5%;
+        border-radius: 20px;
+        padding: 1.5%;
+        border:none;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+      }
+      @media only screen and (max-width: 475px) {
+       h1, h2, h5{
+           font-size: 3.5vw;
+       }
+      }
+  }
