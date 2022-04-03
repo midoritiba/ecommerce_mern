@@ -2,6 +2,7 @@
 
 Ecommerce built with MERN Stack &amp; Redux
 
+- Pagination
 - Shopping cart
 - Product reviews and ratings
 - User profile with orders
@@ -10,3 +11,4 @@ Ecommerce built with MERN Stack &amp; Redux
 - Mark orders as delivered option
 - Checkout process (shipping, payment method, etc)
 - PayPal / credit card integration
+

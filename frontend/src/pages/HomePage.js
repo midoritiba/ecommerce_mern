@@ -1,10 +1,11 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
+// import { Row, Col } from 'react-bootstrap';
+
 const HomePage = () => {
   return (
-    <div>Hello World
-        <Button variant='danger'>testing scss</Button>
-    </div>
+    <main>
+      <h1 className='pt-5 px-5 px-md-0 text-center'>Latest Products</h1>
+    </main>
   )
 }
 

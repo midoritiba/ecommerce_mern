@@ -1,13 +1,14 @@
-//fonts
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;900&family=Patrick+Hand&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+//customizing color
+$custom-colors: (
+    "light-green": #a8b69a,
+    "dark-green": #7d8873,
+    "pink": #bf9075,
+    "light-grey": #6b6b6b,
+    "dark-grey": #a8b69a3d,
+);
 
-//color-scheme
-$primary: #070707;
-$secondary: white;
-$danger: teal;
+//adding my custom colors to the theme-colors map
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
-$light-green: #a8b69a;
-$dark-green: #7d8873;
-$pink: #bf9075;
-$light-grey: #6b6b6b;
-$dark-grey: #a8b69a3d;
+
+  
