@@ -7,7 +7,7 @@ import LoginPage from './pages/LoginPage'
 import ProductPage from './pages/ProductPage'
 import ProfilePage from './pages/ProfilePage'
 import RegisterPage from './pages/RegisterPage'
-import PlaceOrderPage from './screens/PlaceOrderPage'
+import PlaceOrderPage from './pages/PlaceOrderPage'
 
 function App() {
   return (
