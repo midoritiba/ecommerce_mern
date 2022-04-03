@@ -18,16 +18,14 @@ $dark: #3b3838;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+//my custom colors
+
 $light-green: #a8b69a;
 $dark-green: #7d8873;
 $pink: #bf9075;
 $light-grey: #6b6b6b;
 $dark-grey: #a8b69a3d;
 $tertiary: #3fb247;
-
-//adding my custom colors to the theme-colors map
-// $theme-colors: map-merge($theme-colors, $custom-colors);
-
 
 
 //import bootstrap library
