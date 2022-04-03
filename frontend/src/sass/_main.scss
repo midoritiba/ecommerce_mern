@@ -14,15 +14,6 @@ body{
             min-height: 80vh;
         }
     }
-
-    ul{
-        padding-inline-start: 0;
-        li{
-            text-align: center;
-            list-style-type: none;
-            margin: none;
-      }
-    }
 }
 
 //HEADER COMPONENT - NAVBAR
@@ -111,5 +102,38 @@ header{
     }
     .carousel img{
         height: 350px;
+    }
+  }
+
+  //FOOTER COMPONENT
+  footer{
+    width: 100%;
+    background: $light-green;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    border-radius: 0 0 5px 5px ;
+    box-sizing:border-box ;
+
+    .copyright{
+        background: #7d8873;
+        border-radius: 0 0 5px 5px ;
+    }
+        h4{
+            color: $light-grey;
+        }
+        ul{
+            padding-inline-start: 0;
+            li{
+                color: $light;
+                text-align: center;
+                list-style-type: none;
+                margin: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+    }
+    a{
+        text-decoration: none;
     }
   }
