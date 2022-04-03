@@ -5,6 +5,8 @@
 // 4) Hero Section (Component)
 // 5) Footer (Component)
 // 6) Card Product (Product Component)
+// 7) Card Sale (Sale Component)
+// 8) Card Newsletter (Newsletter Component)
 
 // *************************************************
 // 1) Body
@@ -261,3 +263,24 @@ footer{
        }
       }
   }
+
+// *************************************************
+//8) Card Newsletter (Newsletter Component)
+.card-newsletter{
+    min-height: 28rem;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card-text{
+        width: 50%
+    }
+    .btn{
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        &:hover{
+            background-color: #f5f5f570;
+            color: black;
+        }
+    }
+}
