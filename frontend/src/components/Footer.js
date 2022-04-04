@@ -11,18 +11,18 @@ const Footer = () => {
           <Col md={4}>
             <h4>Categories</h4>
             <ul>
-              <Link to='/skincare'><li>Skin Care</li></Link>
-              <Link to='/bodycream'><li>Body Cream</li></Link>
-              <Link to='/makeup'><li>Make Up</li></Link>
-              <Link to='/accessories'><li>Accessories</li></Link>
+              <Link to='/categories/Skin Care'><li>Skin Care</li></Link>
+              <Link to='/categories/Body Lotion'><li>Body Cream</li></Link>
+              <Link to='/categories/Make Up'><li>Make Up</li></Link>
+              <Link to='/categories/Accessories'><li>Accessories</li></Link>
             </ul>
           </Col>
           <Col md={4}>
             <h4>Information</h4>
             <ul>
-              <Link to='/skincare'><li>About Us</li></Link>
-              <Link to='/bodycream'><li>Contact Us</li></Link>
-              <Link to='/makeup'><li>Privacy Policy</li></Link>
+              <Link to='/'><li>About Us</li></Link>
+              <Link to='/'><li>Contact Us</li></Link>
+              <Link to='/'><li>Privacy Policy</li></Link>
             </ul>
           </Col>
           <Col md={4}>
