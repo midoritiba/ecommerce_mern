@@ -10,6 +10,7 @@ import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
+import categoryRoutes from './routes/categoryRoutes.js'
 
 //Middleware
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
@@ -34,6 +35,9 @@ app.use('/api/orders', orderRoutes)
 
 //UPLOAD ROUTE
 app.use('/api/upload', uploadRoutes)
+
+//CATEGORIES ROUTE
+app.use('/api/categories', categoryRoutes)
 
 //PAYPAL CLIENT
 app.get('/api/config/paypal', (req, res) =>

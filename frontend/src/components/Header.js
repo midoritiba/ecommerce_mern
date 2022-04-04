@@ -35,7 +35,7 @@ return (
                             </LinkContainer>
                             {/* NavDropdown */}
                             <NavDropdown className="text-center ps-lg-4" title="CATEGORIES" id="basic-nav-dropdown">
-                                <LinkContainer to='/skincare'>
+                                <LinkContainer to='/categories/Skin Care'>
                                     {/* NavDropdown Item */}
                                     <NavDropdown.Item className="ps-4 text-center">
                                         <div className="pull-left dropdown-item-nav">
@@ -46,7 +46,7 @@ return (
                                         </div>
                                     </NavDropdown.Item>
                                 </LinkContainer>
-                            <LinkContainer to='/bodylotion'>
+                            <LinkContainer to='/categories/Body Lotion'>
                                 {/* NavDropdown Item */}
                                 <NavDropdown.Item className="ps-4 text-center">
                                     <div className="pull-left dropdown-item-nav">
@@ -57,7 +57,7 @@ return (
                                     </div>
                                 </NavDropdown.Item>
                             </LinkContainer>
-                            <LinkContainer to='/makeup'>
+                            <LinkContainer to='/categories/Make Up'>
                                 {/* NavDropdown Item */}
                                 <NavDropdown.Item className="ps-4 text-center">
                                     <div className="pull-left dropdown-item-nav">
@@ -68,7 +68,7 @@ return (
                                     </div>
                                 </NavDropdown.Item>
                             </LinkContainer>
-                            <LinkContainer to='/accessories'>
+                            <LinkContainer to='/categories/Accessories'>
                             {/* NavDropdown Item */}
                             <NavDropdown.Item className="ps-4 text-center">
                                     <div className="pull-left dropdown-item-nav">

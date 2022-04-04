@@ -17,6 +17,7 @@ import UserEditPage from './pages/UserEditPage'
 import ProductListPage from './pages/ProductListPage'
 import ProductEditPage from './pages/ProductEditPage'
 import OrderListPage from './pages/OrderListPage'
+import CategoryPage from './pages/CategoryPage'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <main className='py-3'>
               <Routes>
                 <Route path='/' element={<HomePage />} />  
+                <Route path='/categories/:name' element={<CategoryPage/>}></Route>
                 <Route path='/login' element={<LoginPage />} />
                 <Route path='/register' element={<RegisterPage />} />
                 <Route path='/profile' element={<ProfilePage />} />
