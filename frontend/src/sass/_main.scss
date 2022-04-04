@@ -69,7 +69,8 @@ header{
         color: $light-green!important;
       }
 
-    .active.dropdown-item{
+    .active .dropdown-item{
+        color: white;
         background-color: $pink;
         .dropdown-item-nav{
             color: white;

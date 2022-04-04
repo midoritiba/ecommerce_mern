@@ -93,7 +93,7 @@ return (
                             </LinkContainer>
 
                             {userInfo ? (
-                                <NavDropdown  title={userInfo.name} id='username'>
+                                <NavDropdown className="text-center ps-lg-4"  title={userInfo.name.toUpperCase()} id='username'>
                                     <LinkContainer to='/profile'>
                                         <NavDropdown.Item className="text-center">Profile</NavDropdown.Item>
                                     </LinkContainer>
@@ -108,15 +108,15 @@ return (
                             )}
 
                             {userInfo && userInfo.isAdmin && (
-                                <NavDropdown title='Admin' id='adminmenu'>
+                                <NavDropdown className="text-center ps-lg-4 pe-lg-4" title='ADMIN' id='adminmenu'>
                                     <LinkContainer to='/admin/userlist'>
-                                        <NavDropdown.Item>Users</NavDropdown.Item>
+                                        <NavDropdown.Item className="text-center">Users</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to='/admin/productlist'>
-                                        <NavDropdown.Item>Products</NavDropdown.Item>
+                                        <NavDropdown.Item className="text-center">Products</NavDropdown.Item>
                                     </LinkContainer>
                                     <LinkContainer to='/admin/orderlist'>
-                                        <NavDropdown.Item>Orders</NavDropdown.Item>
+                                        <NavDropdown.Item className="text-center">Orders</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
                             )}
