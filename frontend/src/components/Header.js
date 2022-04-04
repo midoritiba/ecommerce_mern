@@ -81,11 +81,6 @@ return (
                             </LinkContainer>
                             </NavDropdown>
                             {/* End NavDropDown */}
-
-                            {/* NavItem */}
-                            <LinkContainer to='/sale'>
-                                <Nav.Link className="text-center ps-lg-4">SALE</Nav.Link>
-                            </LinkContainer>
                             
                             {/* NavItem */}
                             <LinkContainer to='/cart'>
