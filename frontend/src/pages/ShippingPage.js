@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import FormContainer from '../components/FormContainer'
@@ -27,7 +27,8 @@ const ShippingPage = () => {
 
 
   return (
-    <FormContainer>
+    <Container className='px-5 px-md-0'>
+    <FormContainer >
       <CheckoutSteps step1 step2 />
       <Form onSubmit={submitHandler}>
         <h1>Shipping</h1>
@@ -85,6 +86,7 @@ const ShippingPage = () => {
           </Button>
         </Form>
     </FormContainer>
+    </Container>
   )
 }
 

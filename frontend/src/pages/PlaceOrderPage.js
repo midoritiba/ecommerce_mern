@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
+import { Button, Row, Col, ListGroup, Image, Card, Container } from 'react-bootstrap'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import { useDispatch, useSelector } from 'react-redux'
@@ -58,9 +58,9 @@ const PlaceOrderPage = () => {
     }
 
   return (
-    <>
+    <Container className='px-5 px-md-0'>
         <CheckoutSteps step1 step2 step3 step4/>
-        <Row>
+        <Row className='pt-3'>
         <Col md={8}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
@@ -160,7 +160,7 @@ const PlaceOrderPage = () => {
           </Card> 
         </Col>
       </Row>
-    </>
+    </Container>
   )
 }
 

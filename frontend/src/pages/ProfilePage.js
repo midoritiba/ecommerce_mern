@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Table, Form, Button, Row, Col } from 'react-bootstrap'
+import { Table, Form, Button, Row, Col, Container } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
@@ -56,6 +56,7 @@ const ProfilePage = () => {
   }
 
   return (
+    <Container className='px-5 px-md-0'>
     <Row>
       <Col md={3}>
         <h2>User Profile</h2>
@@ -171,6 +172,7 @@ const ProfilePage = () => {
 
       </Col>
     </Row>
+    </Container>
   )
 }
 

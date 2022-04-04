@@ -2,10 +2,11 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import { Link } from 'react-router-dom'
-import { Row, Col, ListGroup, Image, Form, Button } from 'react-bootstrap'
+import { Row, Col, ListGroup, Image, Form, Button, Container } from 'react-bootstrap'
 import { addToCart, removeFromCart } from '../actions/cartActions'
 import { useLocation, useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router'
+
 
 const CartPage = () => {
   const params = useParams()
@@ -33,9 +34,10 @@ const CartPage = () => {
 
 
   return (
+    <Container>
+      <h1 className='py-3 px-5 px-md-0 '>Shopping Cart</h1>
     <Row>
       <Col md={8}>
-      <h1 className='pt-5 px-5 px-md-0 '>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message variant='light'>
             Your cart is empty <Link to='/'>Go Back</Link>
@@ -86,7 +88,7 @@ const CartPage = () => {
       </Col>
       <Col md={4}>
         <ListGroup variant='flush'>
-          <ListGroup.Item>
+          <ListGroup.Item >
             <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
             €
               {cartItems
@@ -110,6 +112,7 @@ const CartPage = () => {
         
       </Col>
     </Row>
+    </Container>
   )
 }
 

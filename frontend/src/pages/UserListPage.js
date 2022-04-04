@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Table, Button } from 'react-bootstrap'
+import { Table, Button, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import Message from '../components/Message'
@@ -37,7 +37,7 @@ const UserListPage = () => {
     
 
   return (
-    <>
+    <Container className='px-5 px-md-0'>
     <h1>Users</h1>
     {loading ? (
       <Loader />
@@ -88,7 +88,7 @@ const UserListPage = () => {
         </tbody>
       </Table>
     )}
-  </>
+  </Container>
 )
 }
 

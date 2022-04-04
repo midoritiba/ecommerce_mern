@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router'
-import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
+import { Row, Col, Image, ListGroup, Card, Button, Form, Container } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
@@ -57,8 +57,8 @@ const ProductPage = () => {
       }
 
   return (
-    <>
-    <Link className='btn btn-primary my-3' to='/'>
+    <Container className='product-section'>
+    <Link className='btn btn-product my-3' to='/'>
       Go Back
     </Link>
     {loading ? (
@@ -68,10 +68,10 @@ const ProductPage = () => {
     ) : (
       <>
         <Row>
-          <Col md={6}>
+          <Col md={4}>
             <Image src={product.image} alt={product.name} fluid />
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <ListGroup variant='flush'>
               <ListGroup.Item>
                 <h3>{product.name}</h3>
@@ -88,7 +88,7 @@ const ProductPage = () => {
               </ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
@@ -200,6 +200,7 @@ const ProductPage = () => {
                       disabled={loadingProductReview}
                       type='submit'
                       variant='primary'
+                      className='mt-3'
                     >
                       Submit
                     </Button>
@@ -215,7 +216,7 @@ const ProductPage = () => {
         </Row>
       </>
     )}
-  </>
+  </Container>
 )
 }
 

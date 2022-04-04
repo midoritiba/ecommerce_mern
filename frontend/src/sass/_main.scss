@@ -7,6 +7,7 @@
 // 6) Card Product (Product Component)
 // 7) Card Sale (Sale Component)
 // 8) Card Newsletter (Newsletter Component)
+//9) Product Page
 
 // *************************************************
 // 1) Body
@@ -285,5 +286,23 @@ footer{
             background-color: #f5f5f570;
             color: black;
         }
+    }
+}
+
+// *************************************************
+//9) Product Page
+.product-section{
+    .btn{
+        background-color: $primary;
+        border-radius: 10px;
+        color: $secondary;
+        &:hover{
+            background-color: $secondary;
+            color: $primary;
+        }
+    }
+    img{
+        max-height: 400px;
+        border-radius: 20px;
     }
 }

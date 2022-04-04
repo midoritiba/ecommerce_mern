@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { PayPalButton } from 'react-paypal-button-v2'
 import { Link, useNavigate } from 'react-router-dom'
-import { Row, Col, ListGroup, Image, Card, Button } from 'react-bootstrap'
+import { Row, Col, ListGroup, Image, Card, Button, Container } from 'react-bootstrap'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { useDispatch, useSelector } from 'react-redux'
@@ -87,8 +87,8 @@ const OrderPage = () => {
   ) : error ? (
     <Message variant='danger'>{error}</Message>
   ) : (
-    <>
-    <h1>Order {order._id}</h1>
+    <Container className='px-5 px-md-0'>
+    <h1 className='pb-3'>Order {order._id}</h1>
     <Row>
       <Col md={8}>
         <ListGroup variant='flush'>
@@ -224,7 +224,7 @@ const OrderPage = () => {
         </Card>
       </Col>
     </Row>
-  </>
+  </Container>
   )
 }
 

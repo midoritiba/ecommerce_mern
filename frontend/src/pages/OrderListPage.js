@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Table, Button } from 'react-bootstrap'
+import { Table, Button, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -30,7 +30,7 @@ const OrderListPage = () => {
   }, [dispatch, navigate, userInfo])
 
   return (
-    <>
+    <Container className='px-5 px-md-0'>
     <h1>Orders</h1>
     {loading ? (
       <Loader />
@@ -82,7 +82,7 @@ const OrderListPage = () => {
         </tbody>
       </Table>
     )}
-  </>
+  </Container>
   )
 }
 

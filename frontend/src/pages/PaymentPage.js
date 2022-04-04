@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Form, Button, Col } from 'react-bootstrap'
+import { Form, Button, Col, Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import FormContainer from '../components/FormContainer'
@@ -27,12 +27,13 @@ const PaymentPage = ({ history }) => {
   }
 
   return (
+    <Container className='px-5 px-md-0'>
     <FormContainer>
       <CheckoutSteps step1 step2 step3 />
-      <h1>Payment Method</h1>
+      <h1 className='py-2'>Payment Method</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group>
-          <Form.Label as='legend'>Select Method</Form.Label>
+          <Form.Label as='legend' className='pb-2'>Select Method</Form.Label>
           <Col>
             <Form.Check
               type='radio'
@@ -60,6 +61,7 @@ const PaymentPage = ({ history }) => {
         </Button>
       </Form>
     </FormContainer>
+    </Container>
   )
 }
 
