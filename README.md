@@ -1,10 +1,8 @@
 # ecommerce_mern
-
-in production...
+https://organic-care-app.herokuapp.com/
 
 Ecommerce built with MERN Stack &amp; Redux
 
-- Pagination
 - Shopping cart
 - Product reviews and ratings
 - User profile with orders
@@ -14,3 +12,6 @@ Ecommerce built with MERN Stack &amp; Redux
 - Checkout process (shipping, payment method, etc)
 - PayPal / credit card integration
 
+
+
+Images are from Canvas gallery.
