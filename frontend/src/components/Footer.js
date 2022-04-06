@@ -46,7 +46,7 @@ const Footer = () => {
                 Copyright &copy; OrganicCare
             </Col>
             <Col className='text-center py-3'>
-                <Link to='/'>Powered by EasyShop<Image src={process.env.PUBLIC_URL + "/images/easyStoreLogo.png"}/></Link>
+                <Link to='/'>Powered by EasyStore<Image src={process.env.PUBLIC_URL + "/images/easyStoreLogo.png"}/></Link>
             </Col>
         </Row>
       </Container>
