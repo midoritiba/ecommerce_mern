@@ -15,3 +15,4 @@ Ecommerce built with MERN Stack &amp; Redux
 
 
 Images are from Canvas gallery.
+![alt text](https://github.com/midoritiba/ecommerce_mern/blob/main/mockup.png)
